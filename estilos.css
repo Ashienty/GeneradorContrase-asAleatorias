@@ -1,0 +1,42 @@
+#generadorContraseñas {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#generadorContraseñas #cuerpo {
+  padding: 20px;
+  background-color: #121a33;
+  border-radius: 10px;
+}
+#generadorContraseñas #botones {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#generadorContraseñas .flexCenter {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+#generadorContraseñas .textos {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 12px;
+  color: #9fb0ff;
+  padding: 2px;
+}
+#generadorContraseñas .oscuro {
+  padding: 5px 10px;
+  background-color: #0f1630;
+  border: 1px solid #1d233c;
+  border-radius: 3px;
+}
+#generadorContraseñas .oscuro:hover {
+  background-color: #1d233c;
+  border-color: #2a3458;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
