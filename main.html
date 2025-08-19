@@ -13,36 +13,51 @@
       </section>
       <section>
         <div id="botones">
-          <button class="textos oscuro">Generar</button>
-          <button class="textos oscuro">Copiar</button>
+          <button class="textos oscuro" id="botonGenerar">Generar</button>
+          <button class="textos oscuro" id="botonGuardar">Copiar</button>
         </div>
       </section>
       <section>
         <div class="flexCenter">Contraseña</div>
         <div class="flexCenter">
-          <input class="textos oscuro" readonly />
+          <input class="textos oscuro" readonly id="contraseñaRandom" />
         </div>
       </section>
       <div>
         <section class="flexCenter">
-          <div>Longitud: <strong>16</strong> caracteres</div>
-        </section>
-        <section class="flexCenter">
           <div>
-            <input type="range" min="8" max="64" value="16" step="1" />
+            Longitud: <strong id="longContraseña">16</strong> caracteres
           </div>
         </section>
         <section class="flexCenter">
           <div>
-            <div><input type="checkbox" checked />Incluir Minusculas</div>
-            <div><input type="checkbox" name="" id="" />Incluir Mayusculas</div>
+            <input
+              type="range"
+              min="8"
+              max="64"
+              value="16"
+              step="1"
+              id="sliderLong"
+            />
+          </div>
+        </section>
+        <section class="flexCenter">
+          <div>
+            <div>
+              <input type="checkbox" id="minusculas" checked />Incluir
+              Minusculas
+            </div>
+            <div>
+              <input type="checkbox" id="mayusculas" />Incluir Mayusculas
+            </div>
           </div>
           <div>
-            <div><input type="checkbox" />Incluir Numeros</div>
-            <div><input type="checkbox" />Incluir Simbolos</div>
+            <div><input type="checkbox" id="numeros" />Incluir Numeros</div>
+            <div><input type="checkbox" id="simbolos" />Incluir Simbolos</div>
           </div>
         </section>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
