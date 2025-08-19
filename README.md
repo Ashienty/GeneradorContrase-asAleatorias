@@ -3,11 +3,7 @@
 Generador de contraseñas seguras con evaluación de seguridad y copia rápida
 Generador de Contraseñas
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3)
-![JavaScript](https://img.shields.io/badge/JS-F7DF1E?style=flat&logo=javascript)
-
-Generador interactivo de contraseñas aleatorias, con evaluación de seguridad visual y opciones personalizables. Ideal para portafolio o como herramienta de seguridad personal.
+Generador interactivo de contraseñas aleatorias, con evaluación de seguridad visual y opciones personalizables.
 
 ---
 
