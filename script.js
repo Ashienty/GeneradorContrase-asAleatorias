@@ -47,6 +47,18 @@ function generarContraseña() {
     const indice = Math.floor(Math.random() * caracteres.length);
     contraseña += caracteres[indice];
   }
+  let tipos = 0;
+  if (/[a-z]/.test(contraseña)) tipos++;
+  if (/[A-Z]/.test(contraseña)) tipos++;
+  if (/[0-9]/.test(contraseña)) tipos++;
+  if (/[^a-zA-Z0-9]/.test(contraseña)) tipos++;
+  if (longitud < 8 || tipos < 2) {
+    contraseñaRandom.style.color = "red";
+  } else if (longitud < 12 || (tipos < 3 && longitud < 32)) {
+    contraseñaRandom.style.color = "orange";
+  } else {
+    contraseñaRandom.style.color = "green";
+  }
   contraseñaRandom.value = contraseña;
 }
 
@@ -59,6 +71,11 @@ botonGenerar.addEventListener("click", () => {
 });
 botonGuardar.addEventListener("click", () => {
   navigator.clipboard.writeText(contraseñaRandom.value);
+  const textoOriginal = botonGuardar.textContent;
+  botonGuardar.textContent = "!Copiado!";
+  setTimeout(() => {
+    botonGuardar.textContent = textoOriginal;
+  }, 3000);
 });
 
 //Conectar la generacion de contraseñas  a las otras interacciones
